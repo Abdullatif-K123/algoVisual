@@ -6,6 +6,7 @@ import Tab from "@material-ui/core/Tab";
 import { sortingAlgorithms } from "../common/config";
 import { useData } from "../common/store";
 import shallow from "zustand/shallow";
+import logo from "./angleCode.png";
 import { AiFillGithub } from "react-icons/ai";
 
 function a11yProps(index) {
@@ -40,8 +41,12 @@ export function NavBar() {
           alignItems: "center",
         }}
       >
+        <img
+          src={logo}
+          alt="anglecode"
+          style={{ width: "75px", height: "75px" }}
+        />
         <h3>Sorting Algorithms Visualizer</h3>
-        <a href="https://github.com/sadanandpai/sort-visualizer" target="_blank"><AiFillGithub style={{ fontSize: "1.5rem" }} /></a>
       </div>
       <AppBar position="static" color="default">
         <Tabs
